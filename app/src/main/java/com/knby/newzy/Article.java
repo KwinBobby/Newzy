@@ -10,6 +10,7 @@ public class Article {
     private String sortBy;
     private String id;
 
+    //boom
     public String getSortBy() {
         return sortBy;
     }

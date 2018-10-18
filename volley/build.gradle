@@ -17,9 +17,10 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
@@ -27,11 +28,15 @@ apply plugin: 'com.android.library'
 
 repositories {
     jcenter()
+    google()
 }
 
 android {
     compileSdkVersion 22
-    buildToolsVersion = '22.0.1'
+    buildToolsVersion = '28.0.3'
+    defaultConfig {
+        minSdkVersion  8
+    }
 }
 
 apply from: 'rules.gradle'
